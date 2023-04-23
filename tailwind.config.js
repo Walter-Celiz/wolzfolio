@@ -35,7 +35,7 @@ module.exports = {
         textGreen: "#64FFDA",
         textLight: "#CCD6F6",
         textDark: "#8892B0",
-        haverColor: "rgba(100, 255, 218, 0.1)"
+        hoverColor: "rgba(100, 255, 218, 0.1)"
       },
     },
   },
