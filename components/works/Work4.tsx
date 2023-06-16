@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
 import {TiArrowForward} from "react-icons/ti";
 
-function ReactBD1() {
+function Work4() {
   return (
     <motion.div
       animate={{opacity: 1}}
@@ -10,7 +10,7 @@ function ReactBD1() {
       transition={{delay: 0.1}}
     >
       <h3 className="flex gap-1 font-meium text-xl font-titleFont">
-        Engineer <span className="text-textGreen tracking-wide">@ReactBD1</span>
+        Engineer <span className="text-textGreen tracking-wide">@Work4</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">Jan 2033 - adjkasld</p>
       <ul className="mt-6 flex flex-col gap-3">
@@ -40,4 +40,4 @@ function ReactBD1() {
   );
 }
 
-export default ReactBD1;
+export default Work4;

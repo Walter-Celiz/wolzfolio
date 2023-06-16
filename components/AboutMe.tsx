@@ -1,5 +1,9 @@
 import Image from "next/image";
-import {AiFillThunderbolt} from "react-icons/ai";
+import {AiFillHtml5} from "react-icons/ai";
+import {DiCss3, DiJavascript1, DiReact} from "react-icons/di";
+import {TbBrandTypescript, TbBrandNextjs, TbBrandTailwind, TbBrandBootstrap} from "react-icons/tb";
+import {BsFillGrid1X2Fill, BsFiletypeCss} from "react-icons/bs";
+import {SiStyledcomponents, SiBem} from "react-icons/si";
 
 import {profileImg} from "@/public/assets";
 
@@ -15,58 +19,101 @@ function AboutMe() {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full ll:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-            Hello! My name is Walter Celiz and I enjoy creating things that live on the internet. My
-            interst in web developer startet back in 2019 when I deciedd t try editing custom Tumblr
-            themes lbablblasdasdasdbhadmas Hello! My name is Walter Celiz and I enjoy creating
-            things that live on the internet. My interst in web developer startet back in 2019 when
-            I deciedd t try editing custom Tumblr themes lbablblasdasdasdbhadmas
+            Hi, I&apos;m Walter Celiz, a JavaScript developer since 2022. After studying the basics
+            of web development on both worlds, the frontend and the backend, I discovered that my
+            true passion lies in designing and developing user interfaces. I love creating
+            innovative and user-friendly designs for websites and applications
           </p>
           <p>
-            Hello! My name is Walter Celiz and I enjoy creating things that live on the internet. My
-            interst in web developer startet back in 2019 when I deciedd t try editing custom Tumblr
-            themes lbablblasdasdasdbhadmas Hello! My name is Walter Celiz and I enjoy creating
-            things that live on the internet. My interst in web developer startet back in 2019 when
-            I deciedd t try editing custom Tumblr themes lbablblasdasdasdbhadmas
+            I would like to improve my skills in frontend development and learn about different
+            architectures and design patterns to create products that adapt to any need. I am
+            interested in delving deeper into this world and understanding its complexities and
+            details, from accessibility to performance optimization. Additionally, I would like to
+            stay up to date with the latest trends and technologies in the frontend field, so that I
+            can apply them to my projects and offer innovative solutions to clients.
           </p>
-          <p>Here are a technologies I have been working with recently</p>
+          <p>Here are./ technologies I have been working with recently: </p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
-                <AiFillThunderbolt />
+                <AiFillHtml5 />
               </span>
               HTML 5
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
-                <AiFillThunderbolt />
+                <DiCss3 />
               </span>
               CSS 3
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
-                <AiFillThunderbolt />
+                <DiJavascript1 />
               </span>
               JavaScripts (ES6+)
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
-                <AiFillThunderbolt />
+                <TbBrandTypescript />
               </span>
               TypeScript
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
-                <AiFillThunderbolt />
+                <DiReact />
               </span>
               React
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
-                <AiFillThunderbolt />
+                <TbBrandNextjs />
               </span>
               NextJs
             </li>
           </ul>
+          <div className="flex flex-col justify-center items-center">
+            <p className="mt-4 mb-5 flex items-center">
+              Within the world of CSS3, I have been playing around with the basics of:{" "}
+            </p>
+            <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-3">
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <TbBrandBootstrap />
+                </span>
+                Bootstrap 5
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <BsFillGrid1X2Fill />
+                </span>
+                CSS Grid
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <TbBrandTailwind />
+                </span>
+                Tailwind
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <SiBem />
+                </span>
+                BEM
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <SiStyledcomponents />
+                </span>
+                Styled Components
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <BsFiletypeCss />
+                </span>
+                CSS Modules
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="w-full lgl:w-1/3 h-80 relative group">
           <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg">

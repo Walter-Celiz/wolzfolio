@@ -22,7 +22,7 @@ function LeftSide() {
           </span>
         </a>
       </div>
-      <div className="w-[2px] h-80 bg-textDark" />
+      <div className="w-[2px] h-48 bg-textDark" />
     </div>
   );
 }

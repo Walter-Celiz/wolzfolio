@@ -3,44 +3,44 @@
 import {useState} from "react";
 
 import SectionTitle from "./SectionTitle";
-import ReactBD1 from "./works/ReactBD1";
-import ReactBD2 from "./works/ReactBD2";
-import ReactBD3 from "./works/ReactBD3";
-import ReactBD4 from "./works/ReactBD4";
+import Work1 from "./works/Work1";
+import Work2 from "./works/Work2";
+import Work3 from "./works/Work3";
+// import Work4 from "./works/Work4";
 
 function Experience() {
-  const [workReactBD1, setWorkReactBD1] = useState(true);
-  const [workReactBD2, setWorkReactBD2] = useState(false);
-  const [workReactBD3, setWorkReactBD3] = useState(false);
-  const [workReactBD4, setWorkReactBD4] = useState(false);
+  const [work1, setWork1] = useState(true);
+  const [work2, setWork2] = useState(false);
+  const [work3, setWork3] = useState(false);
+  // const [work4, setWork4] = useState(false);
 
-  const handleReactBD1 = () => {
-    setWorkReactBD1(true);
-    setWorkReactBD2(false);
-    setWorkReactBD3(false);
-    setWorkReactBD4(false);
+  const handleWork1 = () => {
+    setWork1(true);
+    setWork2(false);
+    setWork3(false);
+    // setWork4(false);
   };
 
-  const handleReactBD2 = () => {
-    setWorkReactBD1(false);
-    setWorkReactBD2(true);
-    setWorkReactBD3(false);
-    setWorkReactBD4(false);
+  const handleWork2 = () => {
+    setWork1(false);
+    setWork2(true);
+    setWork3(false);
+    // setWork4(false);
   };
 
-  const handleReactBD3 = () => {
-    setWorkReactBD1(false);
-    setWorkReactBD2(false);
-    setWorkReactBD3(true);
-    setWorkReactBD4(false);
+  const handleWork3 = () => {
+    setWork1(false);
+    setWork2(false);
+    setWork3(true);
+    // setWork4(false);
   };
 
-  const handleReactBD4 = () => {
-    setWorkReactBD1(false);
-    setWorkReactBD2(false);
-    setWorkReactBD3(false);
-    setWorkReactBD4(true);
-  };
+  // const handleWork4 = () => {
+  //   setWorkR1(false);
+  //   setWorkR2(false);
+  //   setWorkR3(false);
+  //   setWorkR4(true);
+  // };
 
   return (
     <section className="max-w-container mx-auto py-10 lgl:py-24 px-4" id="experience">
@@ -49,49 +49,43 @@ function Experience() {
         <ul className="md:-32 flex flex-col">
           <li
             className={`${
-              workReactBD1
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor text-textDark"
+              work1 ? "border-l-textGreen text-textGreen" : "border-l-hoverColor text-textDark"
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-            onClick={handleReactBD1}
+            onClick={handleWork1}
           >
-            ReactBD1
+            Henry
           </li>
           <li
             className={`${
-              workReactBD2
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor text-textDark"
+              work2 ? "border-l-textGreen text-textGreen" : "border-l-hoverColor text-textDark"
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-            onClick={handleReactBD2}
+            onClick={handleWork2}
           >
-            ReactBD2
+            Henry[Lab]
           </li>
           <li
             className={`${
-              workReactBD3
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor text-textDark"
+              work3 ? "border-l-textGreen text-textGreen" : "border-l-hoverColor text-textDark"
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-            onClick={handleReactBD3}
+            onClick={handleWork3}
           >
-            ReactBD3
+            HGA Team
           </li>
-          <li
+          {/* <li
             className={`${
-              workReactBD4
+              work4
                 ? "border-l-textGreen text-textGreen"
                 : "border-l-hoverColor text-textDark"
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-            onClick={handleReactBD4}
+            onClick={handleWork4}
           >
             ReactBD4
-          </li>
+          </li> */}
         </ul>
-        {workReactBD1 ? <ReactBD1 /> : null}
-        {workReactBD2 ? <ReactBD2 /> : null}
-        {workReactBD3 ? <ReactBD3 /> : null}
-        {workReactBD4 ? <ReactBD4 /> : null}
+        {work1 ? <Work1 /> : null}
+        {work2 ? <Work2 /> : null}
+        {work3 ? <Work3 /> : null}
+        {/* {work4 ? <Work4 /> : null} */}
       </div>
     </section>
   );

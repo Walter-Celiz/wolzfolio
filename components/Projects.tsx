@@ -26,15 +26,15 @@ function Projects() {
 
             <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
               <div>
-                <p className="font-titleFont text-textGreen text-sm tracking-wide">
-                  Featured Projects
-                </p>
+                <p className="font-titleFont text-textGreen text-sm tracking-wide">01</p>
                 <h3 className="text-2xl font-bold">Henry Foods</h3>
               </div>
               <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quam exercitationem
-                molestiae ab, quo quasi laudantium voluptas omnis natus corporis assumenda non aut
-                impedit perferendis doloremque sunt nihil pariatur officia.
+                I develop a FullStack APP (PERN) in which you can view, search, filter, sort, and
+                create cooking recipes using the spoonacular API
+              </p>
+              <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
+                I leaned Responsive Desing and Deploy proccess
               </p>
               <div className="mt-30">
                 <ul className="md:text-sm font-titleFont tracking-wide flex justify-between text-textGreen drop-shadow-lg shadow-black">
@@ -92,15 +92,15 @@ function Projects() {
 
             <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right z-10">
               <div>
-                <p className="font-titleFont text-textGreen text-sm tracking-wide">
-                  Featured Projects
-                </p>
+                <p className="font-titleFont text-textGreen text-sm tracking-wide">02</p>
                 <h3 className="text-2xl font-bold">Project VideoGames</h3>
               </div>
               <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16  md:p-6 rounded-md">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quam exercitationem
-                molestiae ab, quo quasi laudantium voluptas omnis natus corporis assumenda non aut
-                impedit perferendis doloremque sunt nihil pariatur officia.
+                I develop a FullStack APP (PERN) in which you can view, search, filter, sort, and
+                create Video Games using the rawr API
+              </p>
+              <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16  md:p-6 rounded-md">
+                I leaned Responsive Desing and Deploy proccess
               </p>
               <div className="mt-30">
                 <ul className="md:text-sm font-titleFont tracking-wide flex justify-between text-textGreen drop-shadow-lg shadow-black">

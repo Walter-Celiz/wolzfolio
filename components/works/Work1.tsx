@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
 import {TiArrowForward} from "react-icons/ti";
 
-function ReactBD4() {
+function Work1() {
   return (
     <motion.div
       animate={{opacity: 1}}
@@ -10,34 +10,40 @@ function ReactBD4() {
       transition={{delay: 0.1}}
     >
       <h3 className="flex gap-1 font-meium text-xl font-titleFont">
-        Engineer <span className="text-textGreen tracking-wide">@ReactBD4</span>
+        Teaching Assistant <span className="text-textGreen tracking-wide">@FullStack</span>
       </h3>
-      <p className="text-sm mt-1 font-medium text-textDark">Jan 2033 - adjkasld</p>
+      <p className="text-sm mt-1 font-medium text-textDark">Jul 2022 - Nov 2022</p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark max-w-containerXs">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Write modern, perdomant, maintainable code client and internal projects
+          Full-Stack Teaching Assistant and Bootcamp Helper (TA) for Full-Stack Development
+          students.
         </li>
         <li className="text-base flex gap-2 text-textDark max-w-containerXs">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Write modern, perdomant, maintainable code client and internal projects, Write modern,
-          perdomant, maintainable code client and internal projects
+          Main tasks: <br />
+          • Coordinate a group of students to achieve integration into the study group.
+          <br />
+          • Guide students in the first steps of the course.
+          <br />
+          • Assist in exercise resolution and promote group collaboration (Pair Programming).
+          <br />
+          • Propose ideas for process improvement and progress in the Bootcamp.
+          <br />
         </li>
         <li className="text-base flex gap-2 text-textDark max-w-containerXs">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quaerat, perspiciatis
-          maxime asperiores esse non quas blanditiis ipsum, ut reiciendis laboriosam assumenda
-          inventore doloribus autem corrupti iusto illum tempora incidunt.
+          Learn soft skills in a group
         </li>
       </ul>
     </motion.div>
   );
 }
 
-export default ReactBD4;
+export default Work1;

@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
 import {TiArrowForward} from "react-icons/ti";
 
-function ReactBD3() {
+function Work3() {
   return (
     <motion.div
       animate={{opacity: 1}}
@@ -10,34 +10,32 @@ function ReactBD3() {
       transition={{delay: 0.1}}
     >
       <h3 className="flex gap-1 font-meium text-xl font-titleFont">
-        Engineer <span className="text-textGreen tracking-wide">@ReactBD3</span>
+        Trainee <span className="text-textGreen tracking-wide">@FrontEnd</span>
       </h3>
-      <p className="text-sm mt-1 font-medium text-textDark">Jan 2033 - adjkasld</p>
+      <p className="text-sm mt-1 font-medium text-textDark">Mar 2023 - Apr 2023</p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark max-w-containerXs">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Write modern, perdomant, maintainable code client and internal projects
+          My main task was to refactor old React code into a more modern and maintainable code,
+          following the Clean Code structure
         </li>
         <li className="text-base flex gap-2 text-textDark max-w-containerXs">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Write modern, perdomant, maintainable code client and internal projects, Write modern,
-          perdomant, maintainable code client and internal projects
+          Redesigning the main view of the app dashboard to be multi-platform
         </li>
         <li className="text-base flex gap-2 text-textDark max-w-containerXs">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quaerat, perspiciatis
-          maxime asperiores esse non quas blanditiis ipsum, ut reiciendis laboriosam assumenda
-          inventore doloribus autem corrupti iusto illum tempora incidunt.
+          I learned the basics of Tailwind CSS to apply them in the project
         </li>
       </ul>
     </motion.div>
   );
 }
 
-export default ReactBD3;
+export default Work3;
