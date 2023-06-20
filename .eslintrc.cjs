@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const { resolve } = require('node:path');
 
 const project = resolve(__dirname, 'tsconfig.json');
@@ -31,7 +32,7 @@ module.exports = {
         "tabWidth": 2,
         "semi": true,
         "singleQuote": false,
-        "bracketSpacing": false,
+        "bracketSpacing": true,
         "arrowParens": "always",
         "endOfLine":"auto"
       }

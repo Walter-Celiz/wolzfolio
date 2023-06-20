@@ -1,5 +1,5 @@
 import Head from "next/head";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 import LeftSide from "@/components/LeftSide";
 import Navbar from "@/components/Navbar";
@@ -24,18 +24,18 @@ export default function Home() {
         <Navbar />
         <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
           <motion.div
-            animate={{opacity: 1}}
+            animate={{ opacity: 1 }}
             className="hidden xl:inline-flex w-32 h-full fixed left-0 bottom-0"
-            initial={{opacity: 0}}
-            transition={{delay: 1.5}}
+            initial={{ opacity: 0 }}
+            transition={{ delay: 1.5 }}
           >
             <LeftSide />
           </motion.div>
           <motion.div
-            animate={{opacity: 1}}
+            animate={{ opacity: 1 }}
             className="h-[88vh] w-full mx-auto p-4"
-            initial={{opacity: 0}}
-            transition={{delay: 1}}
+            initial={{ opacity: 0 }}
+            transition={{ delay: 1 }}
           >
             <Banner />
             <AboutMe />
@@ -46,10 +46,10 @@ export default function Home() {
             <Footer />
           </motion.div>
           <motion.div
-            animate={{opacity: 1}}
+            animate={{ opacity: 1 }}
             className="hidden xl:inline-flex w-32 h-full fixed right-0 bottom-0"
-            initial={{opacity: 0}}
-            transition={{delay: 1.5}}
+            initial={{ opacity: 0 }}
+            transition={{ delay: 1.5 }}
           >
             <RightSide />
           </motion.div>
