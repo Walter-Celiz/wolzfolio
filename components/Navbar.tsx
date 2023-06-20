@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-arguments */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-redundant-type-constituents */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import Image from "next/image";
@@ -6,13 +11,11 @@ import {motion} from "framer-motion";
 import {useRef, useState} from "react";
 import {MdOutlineClose} from "react-icons/md";
 
-import {logo} from "@/public/assets";
+import {wlogo} from "@/public/assets";
 
 function Navbar() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any, @typescript-eslint/no-redundant-type-constituents
   const ref = useRef<string | any>("");
   const [showMenu, setShowMenu] = useState(false);
-  // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-arguments
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     const href = e.currentTarget.href;
@@ -22,7 +25,8 @@ function Navbar() {
     elem?.scrollIntoView({
       behavior: "smooth",
     });
-    // update the class name of the clicked link
+
+    //Update the class name of clicked link
     const links = document.querySelectorAll(".nav-link");
 
     links.forEach((link) => {
@@ -35,7 +39,7 @@ function Navbar() {
     <div className="w-full shadow-navbarShadow h-20 lg:h[12vh] sticky top-0 z-50 bg-bodyColor px-4">
       <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
         <motion.div animate={{opacity: 1}} initial={{opacity: 0}} transition={{duration: 0.5}}>
-          <Image alt="logo" className="w-14" src={logo} />
+          <Image alt="wlogo" className="w-14" src={wlogo} />
         </motion.div>
         <div className="hidden mdl:inline-flex items-center gap-7">
           <ul className="flex text-[13px] gap-7">

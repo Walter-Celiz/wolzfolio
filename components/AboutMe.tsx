@@ -16,8 +16,8 @@ function AboutMe() {
       id="aboutme"
     >
       <SectionTitle title="About Me" titleNo="-" />
-      <div className="flex flex-col lgl:flex-row gap-16">
-        <div className="w-full ll:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
+      <div className="flex flex-col lgl:flex-row gap-16 items-center justify-center">
+        <div className="w-full ll:w-2/3 text-base text-textDark font-medium flex flex-col gap-4 items-center justify-center">
           <p>
             Hi, I&apos;m Walter Celiz, a JavaScript developer since 2022. After studying the basics
             of web development on both worlds, the frontend and the backend, I discovered that my
@@ -32,8 +32,10 @@ function AboutMe() {
             stay up to date with the latest trends and technologies in the frontend field, so that I
             can apply them to my projects and offer innovative solutions to clients.
           </p>
-          <p>Here are./ technologies I have been working with recently: </p>
-          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
+          <p className="md:text-start xs:text-center">
+            Here are./ technologies I have been working with recently:{" "}
+          </p>
+          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6 xs:ml-8">
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
                 <AiFillHtml5 />
@@ -71,54 +73,56 @@ function AboutMe() {
               NextJs
             </li>
           </ul>
-          <div className="flex flex-col justify-center items-center">
-            <p className="mt-4 mb-5 flex items-center">
-              Within the world of CSS3, I have been playing around with the basics of:{" "}
-            </p>
-            <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-3">
-              <li className="flex items-center gap-2">
-                <span className="text-textGreen">
-                  <TbBrandBootstrap />
-                </span>
-                Bootstrap 5
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-textGreen">
-                  <BsFillGrid1X2Fill />
-                </span>
-                CSS Grid
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-textGreen">
-                  <TbBrandTailwind />
-                </span>
-                Tailwind
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-textGreen">
-                  <SiBem />
-                </span>
-                BEM
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-textGreen">
-                  <SiStyledcomponents />
-                </span>
-                Styled Components
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-textGreen">
-                  <BsFiletypeCss />
-                </span>
-                CSS Modules
-              </li>
-            </ul>
-          </div>
+          <p className="md:text-start xs:text-center">
+            Within the world of CSS3, I have been playing around with the basics of:{" "}
+          </p>
+          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6 xs:ml-8">
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <TbBrandBootstrap />
+              </span>
+              Bootstrap 5
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <BsFillGrid1X2Fill />
+              </span>
+              CSS Grid
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <TbBrandTailwind />
+              </span>
+              Tailwind
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <SiBem />
+              </span>
+              BEM
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <SiStyledcomponents />
+              </span>
+              Styled Components
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <BsFiletypeCss />
+              </span>
+              CSS Modules
+            </li>
+          </ul>
         </div>
-        <div className="w-full lgl:w-1/3 h-80 relative group">
-          <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg">
-            <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
-              <Image alt="profileImg" className="rounded-lg h-full object-cover" src={profileImg} />
+        <div className="w-full lgl:w-1/3 h-80 relative group xs:ml-3 flex items-center justify-center">
+          <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg flex items-center justify-center">
+            <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0 items-center justify-center">
+              <Image
+                alt="profileImg"
+                className="rounded-lg h-full object-cover xs:ml-3"
+                src={profileImg}
+              />
               <div className="hidden lgl:inline-block absolute w-full h-80  rounded-md top-0 left-0  duration-300" />
             </div>
           </div>

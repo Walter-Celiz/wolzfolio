@@ -31,7 +31,12 @@ export default function Home() {
           >
             <LeftSide />
           </motion.div>
-          <div className="flex flex-col h-[88vh] w-full mx-auto p-4 ">
+          <motion.div
+            animate={{opacity: 1}}
+            className="h-[88vh] w-full mx-auto p-4"
+            initial={{opacity: 0}}
+            transition={{delay: 1}}
+          >
             <Banner />
             <AboutMe />
             <Experience />
@@ -39,7 +44,7 @@ export default function Home() {
             {/* Archive */}
             <Contact />
             <Footer />
-          </div>
+          </motion.div>
           <motion.div
             animate={{opacity: 1}}
             className="hidden xl:inline-flex w-32 h-full fixed right-0 bottom-0"

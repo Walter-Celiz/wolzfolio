@@ -11,6 +11,7 @@ module.exports = {
       contentContainer: "1140px",
       containerSmall: "1024px",
       containerXs: "768px",
+      containerXxs: "360px",
     },
     extend: {
       screens: {
